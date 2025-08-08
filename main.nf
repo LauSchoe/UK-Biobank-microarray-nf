@@ -1,8 +1,8 @@
 /*
 ========================================================================================
-    LauSchoe/UKB_chip
+    LauSchoe/UK-Biobank-microarray-nf
 ========================================================================================
-    Github : https://github.com/LauSchoe/UKB_chip
+    Github : https://github.com/LauSchoe/UK-Biobank-microarray-nf
     Author: Laura Schöttle
     ---------------------------
 */
