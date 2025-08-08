@@ -1,4 +1,4 @@
-# UKB-chip-nf
+# UK-Biobank-microarray-nf
 
 Create a UK Biobank Microarray from SNP data (.bim file) and a Reference Panel (.vcf.gz).
 
