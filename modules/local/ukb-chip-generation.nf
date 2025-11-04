@@ -5,10 +5,11 @@ process UKB_CHIP {
     path reference_panel
     path ukb_snp 
 
-    output: path "*.ukb.vcf.gz", emit: chip 
+    output: path "*.nofilter_ukb.vcf.gz", emit: chip 
 
     """
     tabix -p vcf "${reference_panel}"
-    bcftools view -R "${ukb_snp}" "${reference_panel}" -Oz -o ${reference_panel.simpleName}.ukb.vcf.gz
+    bcftools view -R "${ukb_snp}" "${reference_panel}" |
+    bcftools annotate -x FILTER -Oz -o ${reference_panel.baseName}.nofilter_ukb.vcf.gz
     """
 }
